@@ -38,7 +38,7 @@ def generate_sport_post(raw_news):
     4. Разделяй новости пустыми строками для удобного чтения. Не используй символы ** или ##.
     """
     response = client.models.generate_content(
-        gemini-3.8-flash.,
+        model="gemini-3.8-flash",
         contents=prompt
     )
     return response.text
